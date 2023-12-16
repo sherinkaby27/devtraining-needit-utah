@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="76865e8f930b31101a5635018bba101f" extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" type="collection">
+        <element label="New feild 2" max_length="40" name="new_feild_2" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="New Date/Time" max_length="40" name="u_glide_date_time_1" type="glide_date_time"/>
+        <element label="Requested for" mandatory="true" max_length="32" name="u_requested_for" reference="x_58872_needit_user__sys_user_" type="reference"/>
+        <element choice="1" default="Default:Legal" label=" Request type" mandatory="true" max_length="40" name="u_request_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Facilities" value="[facilities]"/>
+                <element inactive_on_update="false" label="Human resources" value="[hr]"/>
+                <element inactive_on_update="false" label="Manufacturing" value="[manufacturing]"/>
+            </choice>
+        </element>
+        <element label="New Name-Value Pairs" max_length="4000" name="u_simple_name_values_2" type="simple_name_values"/>
+        <element choice="3" default="Legal 1" label="What needed" mandatory="true" max_length="40" name="u_what_needed" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Facilities 1" value="[facilities 1]"/>
+                <element inactive_on_update="false" label="Facilities 2" value="[facilities 2]"/>
+                <element inactive_on_update="false" label="Human Resources 1" value="[hr1]"/>
+                <element inactive_on_update="false" label="Human Resources 2" value="[hr2]"/>
+                <element inactive_on_update="false" label="Legal 1" value="[legal 1]"/>
+                <element inactive_on_update="false" label="Legal 2" value="[legal 2]"/>
+                <element inactive_on_update="false" label="Manufacturing 1" value="[manufacturing 1]"/>
+                <element inactive_on_update="false" label="Manufacturing 2" value="[manufacturing 2]"/>
+            </choice>
+        </element>
+        <element label="When needed" mandatory="true" max_length="40" name="u_when_needed" type="glide_date_time"/>
+    </element>
+</database>
